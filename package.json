@@ -1,0 +1,47 @@
+{
+  "name": "rskjs-util",
+  "version": "1.0.3",
+  "description": "A collection of utility functions for RSK",
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "npm run test:node && npm run test:browser",
+    "test:browser": "npm run build:dist && karma start karma.conf.js",
+    "test:node": "npm run build:dist && istanbul test mocha -- --reporter spec",
+    "build:dist": "babel index.js --source-root ./ -d ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rsksmart/rskjs-util.git"
+  },
+  "keywords": [
+    "rsk",
+    "rskjs-util",
+    "rsk-util",
+    "utilties"
+  ],
+  "bugs": {
+    "url": "https://github.com/rsksmart/rskjs-util/issues"
+  },
+  "homepage": "https://github.com/rsksmart/rskjs-util",
+  "dependencies": {
+    "keccak": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.0.0",
+    "istanbul": "^0.4.1",
+    "karma": "^2.0.0",
+    "karma-browserify": "^5.0.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-detect-browsers": "2.2.6",
+    "karma-env-preprocessor": "^0.1.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-mocha": "^1.3.0",
+    "mocha": "^4.0.0"
+  }
+}
