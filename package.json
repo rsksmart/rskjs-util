@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "A collection of utility functions for RSK",
   "main": "index.js",
+  "license": "MIT",
   "files": [
     "dist"
   ],
