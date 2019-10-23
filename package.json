@@ -4,6 +4,7 @@
   "description": "A collection of utility functions for RSK",
   "main": "index.js",
   "license": "MIT",
+  "types": "./rskjs-util.d.ts",
   "files": [
     "dist"
   ],
@@ -21,14 +22,16 @@
     "rsk",
     "rskjs-util",
     "rsk-util",
-    "utilties"
+    "utilties",
+    "typescript"
   ],
   "bugs": {
     "url": "https://github.com/rsksmart/rskjs-util/issues"
   },
   "homepage": "https://github.com/rsksmart/rskjs-util",
   "dependencies": {
-    "keccak": "^1.0.2"
+    "keccak": "^1.0.2",
+    "typescript": "next"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

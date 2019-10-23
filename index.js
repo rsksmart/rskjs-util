@@ -50,18 +50,17 @@ function toChecksumAddress(address, chainId = null) {
  * @param {string} address
  * @returns {string} address without prefix
  */
-function stripHexPrefix(str) {
-  return str.slice(0, 2) === '0x' ? str.slice(2) : str
+function stripHexPrefix(address) {
+  return address.slice(0, 2) === '0x' ? str.slice(2) : address
 }
-
 
 /**
  * Generates keccak sha256
- * @param {string} keccak input
+ * @param {string} an input
  * @returns {string} keccak sha256 
  */
-function keccak(a) {
-  return createKeccakHash('keccak256').update(a).digest()
+function keccak(input) {
+  return createKeccakHash('keccak256').update(input).digest()
 }
 
 module.exports = {
