@@ -36,8 +36,7 @@ Generates checksummed address.
 **Parameters**
 
 -   `address` **[string][6]** 
--   `chainId`   (optional, default `null`)
--   `chain` **[number][7]** where checksummed address should be valid.
+-   `chainId` **[number?][6]**  (default `null`) where checksummed address should be valid.
 
 Returns **[string][6]** address with checksum applied.
 
@@ -47,7 +46,6 @@ Removes prefix from address if exists.
 
 **Parameters**
 
--   `str`  
 -   `address` **[string][6]** 
 
 Returns **[string][6]** address without prefix
@@ -58,7 +56,6 @@ Generates keccak sha256
 
 **Parameters**
 
--   `a`  
 -   `keccak` **[string][6]** input
 
 Returns **[string][6]** keccak sha256
