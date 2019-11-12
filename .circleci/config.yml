@@ -9,14 +9,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Prepare Truffle
-          command: sudo npm install -g truffle
-
-      - run:
           name: Install rskjs-util
           command: |
                     cd ~/tpm/
-                    npm install  
+                    npm i  
       - run:
           name: Run Tests
           command: npm test
