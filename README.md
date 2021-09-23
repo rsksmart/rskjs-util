@@ -16,7 +16,7 @@ A collection of utility functions for RSK.
 
 ## Install
 ```bash
-npm install --save rskjs-util
+npm install --save @rsksmart/rsk-utils
 ```
 
 ## Table of Contents
